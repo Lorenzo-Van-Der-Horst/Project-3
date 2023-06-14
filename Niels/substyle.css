@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+body{
+    background-color: black;
+}
+
+/*Navigatie*/
+
+nav {
+    max-width: 100%;
+    max-height: 10vh;
+    top: 0;
+    left: 0;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    margin-left: 18px;
+    cursor: pointer;
+}
+
+nav ul {
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px;
+}
+
+nav ul li a {    
+    text-decoration: none;
+    color: black;
+}
+
+.subnav .subnavbtn {
+    font-size: 2rem;  
+    border: none;
+    outline: none;
+    color: white;
+    padding: 2rem 2rem;
+    background-color: inherit;
+    font-family: inherit;
+}
+nav a:hover, .subnav:hover .subnavbtn {
+    background-color:darkgray;
+    color: black;
+    box-shadow: 0rem 0rem 0.1rem 0rem black;
+}
+.subnav-content {
+    display: none;
+    background-color:darkgray;
+}
+.subnav-content a {
+    color: white;
+    text-decoration: none;
+}
+.subnav-content a:hover {
+    background-color: darkgray;
+    color: black;
+    box-shadow: 0rem 0rem 0.1rem 0rem black;
+}
+.subnav:hover .subnav-content {
+    display: flex;
+    flex-direction: column;
+}
+
+nav .btn {
+    color: black;
+    text-decoration: none;
+    margin-right: 18px;
+    padding: 10px;
+}
+
+.headerContent {
+    height: 100vh;
+    max-width: 100vw;
+    background-image: linear-gradient(hsl(0 0% 0% / 0), hsl(0 0% 0% / 0.1), hsl(0 0% 0% / 1)), url(https://tesla-cdn.thron.com/delivery/public/image/tesla/9ed31f26-4d49-4701-bc5b-2121ff85e5b3/bvlatuR/std/2880x1800/Model-S-Main-Hero-Desktop-LHD?quality=auto-medium&format=auto);
+    background-size: cover;
+}
+
+.carTitle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    margin-top: 34em;
+    padding-left: 25em;
+    padding-right: 25em;
+    color: white;
+
+}
+
+.mainInt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color:white;
+    margin-top: 5em;
+    margin-bottom: 5em;
+}
+
+.mainTable {
+    display: flex;
+    color: white;
+    padding-left: 20em;
+    margin-bottom: 10em;
+    font-size: 1vw;
+}
+
+.mainImg {
+    height: 65%;
+    width: 65%;
+}

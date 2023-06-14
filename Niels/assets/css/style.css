@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+/*** Admin Dashboard styling ***/
+  .card{
+      background-color: #c2c2c2;
+      color: black;
+      padding:20px;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 8px 5px 5px black;
+  }
+
+/*** Sidebar styling ***/
+
+  .sidebar {
+      height: 100%;
+      width: 0; 
+      position: fixed; 
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: black;
+      overflow-x: hidden;
+      padding-top: 60px;
+      transition: 0.5s;
+    }
+    
+    .sidebar a {
+      padding: 8px 8px 8px 32px;
+      text-decoration: none;
+      font-size: 22px;
+      color: #fff;
+      display: block;
+      transition: 0.3s;
+    }
+    
+    .sidebar .side-header{
+          margin-left: 30px;
+          margin-bottom: 8px;
+          color: #fff;
+      }
+
+    .sidebar a:hover {
+      background-color: black;
+    }
+    
+    .sidebar .closebtn {
+      position: absolute;
+      top: 0;
+      right: 2px;
+      font-size: 34px;
+      margin-left: 50px;
+    }
+    
+    .openbtn {
+      font-size: 20px;
+      cursor: pointer;
+      padding: 10px 15px;
+      border: none;
+      color: #fff;
+      background-color: black;
+    }
+    
+    .openbtn:hover {
+      color: #ECDAC9;
+    }
+    
+    #main {
+      transition: margin-left .5s;
+      padding: 20px;
+    }
+    
+    @media screen and (max-height: 450px) {
+      .sidebar {padding-top: 15px;}
+      .sidebar a {font-size: 18px;}
+    }
+
+/*** Product table styling ***/
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+  }
+
+  td,
+  th {
+    padding: 10px 16px;
+    text-align: center;
+  }
+
+  th {
+    background-color: black;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+  }
+
+  tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  tr:nth-child(even) {
+    background-color: #eeeeee;
+  }
+
+.footer-hover{
+  color: #000;
+}
+
+.footer-hover:hover{
+  color: #ECDAC9;
+  text-decoration: none;
+}
